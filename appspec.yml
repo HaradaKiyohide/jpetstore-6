@@ -5,6 +5,9 @@ files:
   - source: pom.xml
     destination: /var/lib/tomcat7/webapps/
 
-dependencies:
-  override:
-    - mvn install
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      jpetstore:
+        deployment_group: jpetstore        
