@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
+
 files:
   - source: pom.xml
     destination: /var/lib/tomcat7/webapps/
+
+dependencies:
+  override:
+    - mvn install
