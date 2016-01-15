@@ -4,10 +4,3 @@ os: linux
 files:
   - source: pom.xml
     destination: /var/lib/tomcat7/webapps/
-
-deployment:
-  staging:
-    branch: master
-    codedeploy:
-      jpetstore:
-        deployment_group: jpetstore        

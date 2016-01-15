@@ -1,0 +1,10 @@
+## Customize the test machine
+#machine:
+
+## Customize deployment commands
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      jpetstore:
+        deployment_group: jpetstore        
